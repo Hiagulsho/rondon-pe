@@ -1,5 +1,9 @@
 class BlogsController < ApplicationController
 
+	def blog
+		@blog = Blog.all
+	end
+
 	def new
     	@blog = Blog.new
   	end

@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :blogs
+
+  	before_create :default_type
+		def default_type
+	   	self.user_type ||= "common"
+	end
 end

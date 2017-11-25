@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rondonpe</title>
+    <title>Projeto Rondon Pernambuco</title>
     <%= csrf_meta_tags %>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    
+    <%=render 'shared/mainnav' %>
+    <div class = "container" id = "maincontainer">
+
+
+      
+     <%= yield %> 
+    
+
+
+    </div>
+    
+    <div class="bottom" id = "footer"><p style="color:white;">Instituto Projeto Rondon Pernambuco - Avenida Dom Manuel de Medeiros, Pró-Reitoria de Extensão UFRPE</p></div>
+  
   </body>
 </html>

@@ -1,0 +1,58 @@
+
+<nav class = "navbar navbar-dark" id="mainnav">
+     <div class = "container"> 
+      <%= link_to "Projeto Rondon Pernambuco", root_path, class: "navbar-brand", style: "font-family: Helvetica;" %>
+      
+        <div class="btn-group justify-content-end" role="group" aria-label="Basic example">
+          <% if !user_signed_in? %>
+
+            <%= link_to "Registrar", new_user_registration_path, class: "btn btn-success nav-link" %>
+            
+            <%= link_to "Entrar", new_user_session_path, class: "btn btn-light nav-link" %>
+          <% else %>
+            <button class = "btn btn-dark "><%= current_user.email %></button>
+            <%= link_to "Sair", destroy_user_session_path, :method => :delete, class: "btn btn-light nav-link" %>
+          <% end %>
+        </div>
+    </div>
+  </nav>
+
+<!-- subnav -->
+
+<div class = "container" style="margin-top:0.5rem; margin-bottom: 0.5rem;">
+
+<nav class="navbar navbar-light rounded" id = "subnav-bg">
+  <div class = "row"><btn class="btn">
+    
+    <%= image_tag("logo.svg", width: "30", height: "30", alt: "", id: "logo", class: "rounded-circle") %>
+  </button></div>
+  
+  <ul class="nav">
+    <li class="nav-item">
+      <%= link_to "Início", root_path, class: "nav-link subnav-link" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Notícias", blog_path, class: "nav-link subnav-link" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Doações", doar_path, class: "nav-link subnav-link" %>
+    </li>
+    <li class="nav-item">
+      <%= link_to "Projetos", '#', class: "nav-link subnav-link" %>
+    </li>
+  </ul>
+  <div class = "row justify-content-end"><a class="navbar-brand" href="#">
+    
+   <%= image_tag("facebook.svg", width: "30", height: "30", alt: "") %>
+  </a>
+  
+  </div>
+
+</nav>
+
+
+</div>
+
+<!-- /subnav -->
+
+

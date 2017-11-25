@@ -4,4 +4,8 @@ class PagesController < ApplicationController
   		@blog = Blog.all
 	end
 
+	def doar
+
+	end
+
 end

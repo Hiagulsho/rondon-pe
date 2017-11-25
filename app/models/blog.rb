@@ -1,4 +1,4 @@
 class Blog < ApplicationRecord
   belongs_to :user
-  mount_uploader :banner, AvatarUploader
+  mount_uploader :banner, BannerUploader
 end
