@@ -52,3 +52,4 @@ production:
   database: rondonpe_production
   username: rondonpe
   password: <%= ENV['RONDONPE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
