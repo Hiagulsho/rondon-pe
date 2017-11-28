@@ -1,0 +1,5 @@
+<% @document.each do |item| %>
+<%= item.title %>
+<%= link_to "Link pro documento", show_document_path(:blog_id => item.id) %>
+<br>
+<% end %>

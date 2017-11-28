@@ -34,8 +34,12 @@ body {
 	border: #FF4900 solid 2px;
 }
 
-#footer {
+footer {
 	background-color: #06266F;
+	position: fixed;
+
+    bottom: 0;
+    width: 100%;
 }
 
 #ajudah5 {

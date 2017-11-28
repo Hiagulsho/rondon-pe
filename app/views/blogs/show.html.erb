@@ -10,21 +10,22 @@
 
           <!-- Blog Post -->
           
-          <% @blog.each do |item| %>
+          
 
           <div class="card mb-4 border-widget">
-            <%= image_tag(item.banner, width: "750", height: "300", alt: "", class: "card-img-top") %>
+            <%= image_tag(@blog.banner, width: "750", height: "300", alt: "", class: "card-img-top") %>
             <div class="card-body">
-              <h2 class="card-title"><%= item.title %></h2>
-              <p class="card-text"><% item.subtitle %></p>
-              <%= link_to "Continue lendo", show_blog_path(:blog_id => item.id), class: "btn btn-primary" %>
+              <h2 class="card-title"><%= @blog.title %></h2>
+              <p class="card-text"><%= @blog.subtitle %></p>
+              
             </div>
             <div class="card-footer text-muted">
               Posted on January 1, 2017 by
               <a href="#">Start Bootstrap</a>
             </div>
+          <p><%= @blog.content %></p>
           </div>
-          <% end %>
+          
           <!-- Blog Post 
           <div class="card mb-4 border-widget">
             <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
