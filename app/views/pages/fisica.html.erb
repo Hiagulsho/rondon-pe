@@ -14,35 +14,7 @@
         </div>
 
         <p class="card-text"></p>
-        <p>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Meio de Pagamento
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-          <div class="row">
-            <div class="">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Cartão de Cŕedito</h5>
-                  <%= image_tag("cartao.png", width: "130", height: "150") %>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">PAYPAL</a>
-                </div>
-              </div>
-            </div>
-            <div class="">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Boleto</h5>
-                  <%= image_tag("barras.jpg", width: "150", height: "70") %>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">PAYPAL</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <%= link_to "Continuar", doar_fisica_unica_valores_path, class: "btn btn-primary" %>
       </div>
     </div>
   </div>
@@ -56,8 +28,8 @@
           &nbsp;
         </div>
 
-        <p class="card-text">Contribua mensalmente através do cartão de crédito pelo paypal automaticamente. Cancelamento a qualquer momento.</p>
-        <%= link_to "PAYPAL", "#", class: "btn btn-primary" %>
+        <p class="card-text">Contribua mensalmente através do cartão de crédito de forma automática. Cancelamento a qualquer momento.</p>
+        <p> Em construção </p>
       </div>
     </div>
   </div>

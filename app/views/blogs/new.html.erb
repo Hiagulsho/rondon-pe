@@ -1,5 +1,7 @@
-<% if !user_signed_in? %>
-	<h3>Área não autorizada</h3>
+<% if !user_signed_in? || (current_user.user_type != "admin" || current_user.user_type != "mod") %>
+	<script type="text/javascript">
+    window.location.href="http://localhost:3000"  
+  </script>
 
 <% else %>
 
