@@ -1,5 +1,5 @@
 # Change these
-server '104.236.111.9', port: '', roles: [:web, :app, :db], primary: true
+server '104.236.111.9', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@bitbucket.org:hiagoserpa/rondon-pe.git'
 set :application,     'rondon-pe'
