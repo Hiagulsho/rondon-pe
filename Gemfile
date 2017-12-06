@@ -33,7 +33,7 @@ gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
-
+gem 'config'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

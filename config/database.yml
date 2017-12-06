@@ -51,5 +51,5 @@ production:
   <<: *default
   database: rondonpe_production
   username: rondonpe
-  password: <%= ENV['CLEARDB_DATABASE_URL'] %>
+  password: atmazs241
   url: <%= ENV['DATABASE_URL'] %>
