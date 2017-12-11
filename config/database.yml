@@ -52,4 +52,5 @@ production:
   database: rondonpe_production
   username: rondonpe
   password: atmazs241
+  host: localhost
   url: <%= ENV['DATABASE_URL'] %>
