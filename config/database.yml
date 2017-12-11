@@ -49,4 +49,8 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
+  database: rondonpe_production
+  username: rondonpe
+  password: atmazs241
+  host: localhost
+  url: <%= ENV['DATABASE_URL'] %>
